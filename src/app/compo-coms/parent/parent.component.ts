@@ -5,10 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './parent.component.html',
 })
 export class ParentComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
