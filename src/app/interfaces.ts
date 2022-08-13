@@ -15,4 +15,5 @@ export interface IUser {
   password: string;
   birthdate: Date;
   registeredAt: Date;
+  age: number;
 }

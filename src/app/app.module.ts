@@ -6,10 +6,16 @@ import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AppRoutingModule } from './routing.module';
+import { UsersService } from './users.service';
+import { CommonModule } from '@angular/common';
+import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
+import { CompoComsComponent } from './compo-coms/compo-coms.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatListModule, AppRoutingModule],
-  declarations: [AppComponent, HelloComponent],
+  imports: [BrowserAnimationsModule, FormsModule, MatListModule, AppRoutingModule],
+  declarations: [AppComponent, HelloComponent, NgIfNgForComponent, CompoComsComponent],
   bootstrap: [AppComponent],
+  providers: [UsersService]
 })
 export class AppModule {}

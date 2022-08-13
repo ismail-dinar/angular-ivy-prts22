@@ -7,7 +7,7 @@ import { UsersService } from '../users.service';
   templateUrl: './ng-if-ng-for.component.html',
 })
 export class NgIfNgForComponent implements OnInit {
-  public users: IUser[];
+  public users: IUser[] = [];
 
   public constructor(private userService: UsersService) {}
 

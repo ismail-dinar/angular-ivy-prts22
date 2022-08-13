@@ -1,3 +1,5 @@
-<p>
-ng-if-ng-for works!
-</p>
+<h2>Display the users that are older than 18 years</h2>
+
+<ul *ngFor="let user of users">
+  <li>{{ user.username }}</li>
+</ul>
