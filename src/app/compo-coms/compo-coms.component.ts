@@ -4,6 +4,4 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-compo-coms',
   templateUrl: './compo-coms.component.html',
 })
-export class CompoComsComponent {
-    public users 
-}
+export class CompoComsComponent {}

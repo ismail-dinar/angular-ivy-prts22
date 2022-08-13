@@ -4,8 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-parent',
   templateUrl: './parent.component.html',
 })
-export class ParentComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
+export class ParentComponent {
+    public dataToBeSentToChild = 'This is a message from the parent'
 }
