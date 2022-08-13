@@ -1,0 +1,16 @@
+<div class="logo-container">
+  <img
+    src="https://www.tic-nova.com/wp-content/uploads/2020/04/angular-10.png"
+    alt="angular logo"
+    class="logo"
+  />
+</div>
+<mat-selection-list [multiple]="false">
+  <mat-list-option *ngFor="let challenge of challenges" [value]="challenge">
+    <a class="challenge-item" [routerLink]="challenge.route">
+      {{ challenge.name }}
+    </a>
+  </mat-list-option>
+</mat-selection-list>
+
+<router-outlet></router-outlet>
