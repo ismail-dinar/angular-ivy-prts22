@@ -11,11 +11,25 @@ import { CommonModule } from '@angular/common';
 import { NgIfNgForComponent } from './ng-if-ng-for/ng-if-ng-for.component';
 import { CompoComsComponent } from './compo-coms/compo-coms.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ParentComponent } from './compo-coms/parent/parent.component';
+import { ChildComponent } from './compo-coms/child/child.component';
 
 @NgModule({
-  imports: [BrowserAnimationsModule, FormsModule, MatListModule, AppRoutingModule],
-  declarations: [AppComponent, HelloComponent, NgIfNgForComponent, CompoComsComponent],
+  imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    MatListModule,
+    AppRoutingModule,
+  ],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    NgIfNgForComponent,
+    CompoComsComponent,
+    ParentComponent,
+    ChildComponent,
+  ],
   bootstrap: [AppComponent],
-  providers: [UsersService]
+  providers: [UsersService],
 })
 export class AppModule {}
