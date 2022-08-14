@@ -13,6 +13,9 @@ import { CompoComsComponent } from './compo-coms/compo-coms.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ParentComponent } from './compo-coms/parent/parent.component';
 import { ChildComponent } from './compo-coms/child/child.component';
+import { HttpRequestComponent } from './http-request/http-request.component';
+import { DataService } from './http-request/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -20,6 +23,7 @@ import { ChildComponent } from './compo-coms/child/child.component';
     FormsModule,
     MatListModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   declarations: [
     AppComponent,
@@ -28,8 +32,9 @@ import { ChildComponent } from './compo-coms/child/child.component';
     CompoComsComponent,
     ParentComponent,
     ChildComponent,
+    HttpRequestComponent,
   ],
   bootstrap: [AppComponent],
-  providers: [UsersService],
+  providers: [UsersService, DataService],
 })
 export class AppModule {}

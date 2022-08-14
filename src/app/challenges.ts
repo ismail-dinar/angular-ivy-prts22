@@ -12,4 +12,9 @@ export const CHALLENGES: IChallenge[] = [
     displayOrder: 2,
     route: ROUTES_PATHS.CompoComsComponent,
   },
+  {
+    name: 'Http Request',
+    displayOrder: 3,
+    route: ROUTES_PATHS.HttpRequestComponent,
+  },
 ];

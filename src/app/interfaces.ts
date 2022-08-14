@@ -17,3 +17,12 @@ export interface IUser {
   registeredAt: Date;
   age: number;
 }
+
+export interface IFood {
+  id: number;
+  uid: string;
+  dish: string;
+  description: string;
+  ingredient: string;
+  measureme,t: string;
+}
